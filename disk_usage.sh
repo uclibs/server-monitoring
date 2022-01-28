@@ -3,7 +3,7 @@
 # vars #
 disk="/dev/mapper/rhel-root" # disk to monitor
 current_usage=$(df -h | grep ${disk} | awk {'print $5'}) # get disk usage from monitored disk
-max_usage="85%" # max 83% disk usage
+max_usage="85%" # max 85% disk usage
 mail="hortongn@ucmail.uc.edu" # mail to sent alert to
 
 # functions #
