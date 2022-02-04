@@ -1,6 +1,6 @@
 #!/bin/bash
 # Shell script to monitor or watch the high Mem-load
-# It will send an email to $ADMIN, if the (memroy load is in %) percentage of Mem-load is >= 80%
+# It will send an email to ADMIN, if the (memroy load is in %) percentage of Mem-load is >= 80%
 
 # you don't need this, $HOSTNAME is a system variable and
 ## already set.
