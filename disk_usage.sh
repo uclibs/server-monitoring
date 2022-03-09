@@ -24,11 +24,6 @@ function max_exceeded() {
     echo "Mail was sent to ${mail}"
 }
 
-function no_problems() {
-
-    echo "No problems. Disk (${disk}) usage at ${current_usage}. Max is set to ${max_usage}."
-}
-
 function main() {
 
     # check if a valid disk is chosen
