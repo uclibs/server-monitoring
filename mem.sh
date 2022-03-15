@@ -3,7 +3,7 @@ ramusage=$(free | awk '/Mem/{printf("RAM Usage: %.2f\n"), $3/$2*100}'| awk '{pri
 
 if [ "$ramusage" > 20 ]; then
 
- SUBJECT="ATTENTION: Memory Utilization is High on $(hostname) at $(date)"
+ SUBJECT="Memory Utilization is High on $(hostname) at $(date)"
  MESSAGE="/tmp/Mail.out"
  TO="olanreaz@ucmail.uc.edu, hortongn@ucmail.uc.edu"
  echo "Memory Current Usage is: $ramusage%" >> $MESSAGE
