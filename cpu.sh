@@ -1,7 +1,7 @@
 #!/bin/bash
 cpuuse=$(cat /proc/loadavg | awk '{print $3}'|cut -f 1 -d ".")
 if [ "$cpuuse" -ge 0 ]; then
-  SUBJECT="ATTENTION: CPU load is high on $(hostname) at $(date)"
+  SUBJECT="ATTENTION: CPU load update on $(hostname) at $(date)"
   MESSAGE="/tmp/Mail.out"
   TO="olanreaz@ucmail.uc.edu,hortongn@ucmail.uc.edu"
   echo "CPU current usage is: $cpuuse%" >> $MESSAGE
